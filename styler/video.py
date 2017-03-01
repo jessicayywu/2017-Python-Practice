@@ -33,7 +33,6 @@ class Video:
             ret, frame = self.cap.read()
             if ret:
                 frames.append(resize(frame, image_h, image_w))
-                print("frame++")
             else:
                 break
 
